@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        /* Updated pastel-girlish project background & card styles */
+        .projects {
+            max-width: 1100px;
+            margin: 2.2rem auto;
+            padding: 2.2rem;
+            border-radius: 20px;
+            background: linear-gradient(135deg,
+                    rgba(255, 245, 230, 0.85) 0%,
+                    /* soft warm */
+                    rgba(255, 230, 245, 0.85) 30%,
+                    /* soft pink */
+                    rgba(225, 245, 255, 0.85) 65%,
+                    /* baby blue */
+                    rgba(255, 255, 255, 0.95) 100%);
+            /* white */
+            box-shadow: 0 12px 40px rgba(20, 20, 50, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(6px);
+            color: #333;
+        }
+
+        /* Section title */
+        .projects h2 {
+            text-align: center;
+            color: #5b4bd6;
+            /* soft purple accent */
+            font-size: 2rem;
+            margin-bottom: 1.1rem;
+            letter-spacing: 0.6px;
+        }
+
+        /* Individual project card */
+        .project-item {
+            display: grid;
+            grid-template-columns: 1fr 210px;
+            gap: 1rem;
+            align-items: center;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.82));
+            padding: 1.1rem 1.2rem;
+            border-radius: 14px;
+            margin-bottom: 1.1rem;
+            border-left: 6px solid rgba(255, 200, 70, 0.95);
+            /* subtle gold accent */
+            transition: transform 220ms ease, box-shadow 220ms ease;
+            box-shadow: 0 6px 18px rgba(90, 70, 130, 0.06);
+        }
+
+        /* Hover lift */
+        .project-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(90, 70, 130, 0.12);
+        }
+
+        /* Title & link */
+        .project-item h3 {
+            margin: 0 0 .35rem 0;
+            color: #ff6fb3;
+            /* pink accent for headings */
+            font-size: 1.08rem;
+        }
+
+        .project-item h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .project-item h3 a:hover {
+            text-decoration: underline;
+        }
+
+        /* Description */
+        .project-item p {
+            margin: 0;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Media (image / video) */
+        .project-item img,
+        .project-item video {
+            width: 100%;
+            max-width: 210px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            justify-self: end;
+            background: #f0f7ff;
+            padding: 6px;
+            box-shadow: 0 8px 18px rgba(100, 120, 160, 0.06);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 780px) {
+            .project-item {
+                grid-template-columns: 1fr;
+            }
+
+            .project-item img,
+            .project-item video {
+                max-width: 100%;
+                justify-self: stretch;
+            }
+        }
+
+        /* Small decorative sparkle before title (optional) */
+        .project-item h3::before {
+            content: "✨ ";
+            margin-right: 6px;
+            color: #ffd166;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+            <div>
+                <h3><a href="https://www.onlinegdb.com/edit/XS-TuHW2i" target="_blank">EMPLOYEE MANAGEMENT</a></h3>
+                <p>
+                    A web application to manage blood donations, donors, and requests efficiently. Click the project
+                    name to view details.
+                </p>
+            </div>
+            <div>
+                <img src="employee managemant.png" alt="employee management logo">
+            </div>
+
+</body>
+
+</html>
